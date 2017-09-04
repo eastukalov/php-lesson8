@@ -11,7 +11,6 @@
 	if (isset($_GET['rb']) && !empty($_GET['rb'])) {
 		
 		if (is_readable($_GET['rb'])) {
-			$tests=htmlspecialchars(file_get_contents($_GET['rb']));
 			$tests=json_decode(file_get_contents($_GET['rb']),true);
 			$check = false;
 
